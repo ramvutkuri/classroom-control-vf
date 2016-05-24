@@ -43,7 +43,7 @@ ensure => file,
 owner => 'root',
 group => 'root',
 mode => '0644',
-content => "I liked the Puppet class",
+content => "I liked the Puppet training",
 }
 
 node default {
