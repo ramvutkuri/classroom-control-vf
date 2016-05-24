@@ -54,6 +54,7 @@ node default {
     #content => "I liked the puppet training",
    # }
    include users
+   include skeleton
    host { 'testing host entry' :
     name => 'testing.puppetlabs.vm',
     ip => '127.0.0.1',
