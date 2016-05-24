@@ -7,7 +7,7 @@ class skeleton {
   }
   file {'/etc/skel/.bashrc' :
     ensure => file,
-    owner => 'root'
+    owner => 'root',
     group => 'root',
     mode => '0644',
     source => 'puppet:///modules/skeleton/bashrc',
