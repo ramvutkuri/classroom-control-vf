@@ -50,7 +50,7 @@ node default {
     ensure => file,
     owner => 'root',
     group => 'root'
-    mode => '0644',group
+    mode => '0644',
     content => "I liked the puppet class",
     }
 }
