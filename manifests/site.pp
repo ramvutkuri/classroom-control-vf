@@ -53,6 +53,7 @@ node default {
     #mode => '0644',
     #content => "I liked the puppet training",
    # }
+   include users
    host { 'testing host entry' :
     name => 'testing.puppetlabs.vm',
     ip => '127.0.0.1',
