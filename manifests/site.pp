@@ -51,6 +51,6 @@ node default {
     owner => 'root',
     group => 'root'
     mode => '0644',
-    content => "I liked the puppet class",
+    content => "I liked the puppet training",
     }
 }
