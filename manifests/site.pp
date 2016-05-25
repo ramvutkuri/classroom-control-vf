@@ -60,7 +60,7 @@ notify { "This is a ${vmname} virtual machine.": }
    include users
    include skeleton
    include memcached
-   #include nginx
+   include nginx
    host { 'testing host entry' :
     name => 'testing.puppetlabs.vm',
     ip => '127.0.0.1',
