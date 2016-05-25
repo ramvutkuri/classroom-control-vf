@@ -45,6 +45,10 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "Hello, my name is ${::hostname}": }
+  if $::virtual != 'physical' {
+$vmname = capitalize($::virtual)
+notify { "This is a ${vmname} virtual machine.": }
+}
   
   #file { '/etc/motd' :
    # ensure => file,
@@ -56,7 +60,7 @@ node default {
    include users
    include skeleton
    include memcached
-   include nginx
+   #include nginx
    host { 'testing host entry' :
     name => 'testing.puppetlabs.vm',
     ip => '127.0.0.1',
